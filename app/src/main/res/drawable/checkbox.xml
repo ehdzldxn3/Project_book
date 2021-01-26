@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="false" android:drawable="@drawable/join_chk_off">
+        <scale android:scaleWidth="10dp" android:scaleHeight="10dp"/>
+    </item>
+    <item android:state_checked="true" android:drawable="@drawable/join_chk_on">
+        <scale android:scaleWidth="10dp" android:scaleHeight="10dp"/>
+    </item>
+    <item android:drawable="@drawable/join_chk_off">
+        <scale android:scaleWidth="10dp" android:scaleHeight="10dp"/>
+    </item>
+</selector>

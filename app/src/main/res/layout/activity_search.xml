@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backgrond_tag_border"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_underbar_grey"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            app:srcCompat="@drawable/search3" />
+
+        <EditText
+
+            android:id="@+id/editSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:fontFamily="@font/gmarketsansttfmedium"
+            android:hint="책 검색"
+            android:inputType="textPersonName"
+            android:paddingLeft="8dp" />
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/mainpage3" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_tag2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/backgrond_tag_border"
+                android:fontFamily="@font/gmarketsansttfmedium"
+                android:padding="5dp"
+                android:text="시문학" />
+
+            <TextView
+                android:id="@+id/textView_tag3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/backgrond_tag_border"
+                android:fontFamily="@font/gmarketsansttfmedium"
+                android:padding="5dp"
+                android:text="에세이" />
+
+            <TextView
+                android:id="@+id/textView_tag4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/backgrond_tag_border"
+                android:fontFamily="@font/gmarketsansttfmedium"
+                android:padding="5dp"
+                android:text="자기계발" />
+
+            <TextView
+                android:id="@+id/textView_tag5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/backgrond_tag_border"
+                android:fontFamily="@font/gmarketsansttfmedium"
+                android:padding="5dp"
+                android:text="역사" />
+
+            <TextView
+                android:id="@+id/textView_tag6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/backgrond_tag_border"
+                android:fontFamily="@font/gmarketsansttfmedium"
+                android:padding="5dp"
+                android:text="과학" />
+
+            <TextView
+                android:id="@+id/textView_tag7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/backgrond_tag_border"
+                android:fontFamily="@font/gmarketsansttfmedium"
+                android:padding="5dp"
+                android:text="소설" />
+
+            <TextView
+                android:id="@+id/textView_tag8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/backgrond_tag_border"
+                android:fontFamily="@font/gmarketsansttfmedium"
+                android:padding="5dp"
+                android:text="만화" />
+
+            <TextView
+                android:id="@+id/textView_tag9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/backgrond_tag_border"
+                android:fontFamily="@font/gmarketsansttfmedium"
+                android:padding="5dp"
+                android:text="예술" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

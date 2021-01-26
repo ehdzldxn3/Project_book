@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MemberFindActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/maincolor"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="15dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/bookview7" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gmarketsansttfbold"
+            android:gravity="center"
+            android:text="아이디/비밀번호 찾기"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background_find_id_on"
+            android:fontFamily="@font/gmarketsansttfbold"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="아이디 찾기"
+            android:textColor="@color/subcolor"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background_find_id"
+            android:fontFamily="@font/gmarketsansttfbold"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="비밀번호 찾기"
+            android:textColor="#88999999"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_id1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textVIew22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/gmarketsansttflight"
+            android:gravity="center"
+            android:inputType="textWebEmailAddress"
+            android:padding="5dp"
+            android:text="가입시 등록하신 이메일을 입력해주세요"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/editText_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:fontFamily="@font/gmarketsansttfmedium"
+            android:hint="이메일"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/button_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@color/maincolor"
+            android:fontFamily="@font/gmarketsansttfbold"
+            android:text="아이디 찾기"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_id2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textVIew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/gmarketsansttflight"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="이메일로 전송된 인증코드를 입력해주세요"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/editText_id2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:fontFamily="@font/gmarketsansttfmedium"
+            android:hint="인증코드"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/button_id2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@color/maincolor"
+            android:fontFamily="@font/gmarketsansttfbold"
+            android:text="아이디 찾기"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_id3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gmarketsansttfmedium"
+            android:padding="8dp"
+            android:text="회원님의 아이디는 xx입니다." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_pw1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/textVIew23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gmarketsansttflight"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="아이디를 입력해주세요"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/editText_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:fontFamily="@font/gmarketsansttfmedium"
+            android:hint="아이디"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/button_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@color/maincolor"
+            android:fontFamily="@font/gmarketsansttfbold"
+            android:text="비밀번호 찾기"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_pw2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textVIew2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/gmarketsansttflight"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="등록된 이메일로 전송한 인증코드를 입력해주세요"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/editText_pw2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:fontFamily="@font/gmarketsansttfmedium"
+            android:hint="인증코드"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/button_pw2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@color/maincolor"
+            android:fontFamily="@font/gmarketsansttfbold"
+            android:text="비밀번호 찾기"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_pw3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textVIew3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/gmarketsansttflight"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="새로 설정할 비밀번호를 입력해주세요"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/editText_pw3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:fontFamily="@font/gmarketsansttfmedium"
+            android:hint="비밀번호"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/editText_pw4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:fontFamily="@font/gmarketsansttfmedium"
+            android:hint="비밀번호 확인"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/button_pw3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@color/maincolor"
+            android:fontFamily="@font/gmarketsansttfbold"
+            android:text="비밀번호 찾기"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</LinearLayout>
